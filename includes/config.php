@@ -5,17 +5,20 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'whistleblowing_system');
 
-// Create connection
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+// Application settings
+define('APP_NAME', 'Whistle Blowing System');
+define('APP_ROOT', dirname(dirname(__FILE__)));
+define('UPLOAD_DIR', APP_ROOT . '/uploads');
+define('MAX_FILE_SIZE', 5); // MB
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// Include helper files
+require_once 'functions.php';
+require_once 'auth.php';
 
-// Set charset
-$conn->set_charset("utf8mb4");
+// Initialize database connection
+$conn = db_connect();
 
-// Start session
-session_start();
+// Error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 ?>

@@ -24,6 +24,10 @@ include 'includes/auth.php'; // This will check if user is logged in
             <h3>Report Suspected Corruption</h3>
             <p>Please provide detailed information about the person or activity you're reporting.</p>
             
+            <?php if (isset($_GET['error'])): ?>
+                <div class="alert alert-error"><?php echo htmlspecialchars($_GET['error']); ?></div>
+            <?php endif; ?>
+            
             <div class="form-group">
                 <label for="suspectName">Suspect Name *</label>
                 <input type="text" id="suspectName" name="suspectName" required placeholder="Name of the person being reported">

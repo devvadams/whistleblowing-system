@@ -1,6 +1,7 @@
 <?php
 include '../includes/config.php';
-include '../includes/auth.php';
+// include '../includes/auth.php';
+require_once '../includes/auth.php';
 
 // Check if user is admin
 if ($_SESSION['user_role'] != 'admin') {

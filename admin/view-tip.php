@@ -9,7 +9,7 @@ if ($_SESSION['user_role'] != 'admin') {
 }
 
 // Get tip ID from URL
-if (!isset($_GET['id']) {
+if (!isset($_GET['id'])) {
     header("Location: tips.php");
     exit();
 }

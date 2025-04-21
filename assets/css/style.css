@@ -154,6 +154,150 @@ textarea {
     font-weight: 600;
 }
 
+/* Submission Success Page */
+.submission-success {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.success-icon {
+    font-size: 60px;
+    color: var(--success-color);
+    margin-bottom: 20px;
+}
+
+.reference-box {
+    background: #f8f9fa;
+    border: 1px dashed #ccc;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.reference-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 10px 0;
+    word-break: break-all;
+}
+
+.next-steps {
+    text-align: left;
+    margin: 25px 0;
+    padding: 15px;
+    background: #f0f8ff;
+    border-radius: 5px;
+}
+
+.next-steps ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Status Tracking Page */
+.status-card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.ref-number {
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.status-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-under-investigation {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.status-resolved {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-dismissed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status-details {
+    margin-bottom: 20px;
+}
+
+.status-details p {
+    margin-bottom: 8px;
+}
+
+.status-updates {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.status-updates h5 {
+    margin-bottom: 15px;
+}
+
+.update {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.update-date {
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.update-status {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.update-details {
+    color: #555;
+    font-size: 14px;
+}
+
+
 /* Table Styles */
 table {
     width: 100%;
