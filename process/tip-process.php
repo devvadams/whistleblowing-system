@@ -1,6 +1,6 @@
 <?php
 include '../includes/config.php';
-include '../includes/auth.php';
+require_once '../includes/auth.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get form data

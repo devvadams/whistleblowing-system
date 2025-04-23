@@ -1,6 +1,6 @@
 <?php 
 include 'includes/config.php';
-include 'includes/auth.php'; // This will check if user is logged in
+require_once 'includes/auth.php'; // This will check if user is logged in
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,6 +1,6 @@
 <?php
-include '../../includes/config.php';
-include '../../includes/auth.php';
+include '../includes/config.php';
+require_once '../includes/auth.php';
 
 // Check if user is admin
 if ($_SESSION['user_role'] != 'admin') {
@@ -42,8 +42,8 @@ $statusResult = $conn->query($statusQuery);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Tip - Admin Dashboard</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 <body>
     <header>

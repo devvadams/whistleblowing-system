@@ -1,6 +1,6 @@
 <?php
 include 'includes/config.php';
-include 'includes/auth.php';
+require_once 'includes/auth.php';
 
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {

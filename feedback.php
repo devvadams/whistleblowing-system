@@ -1,6 +1,6 @@
 <?php 
 include 'includes/config.php';
-include 'includes/auth.php';
+require_once 'includes/auth.php';
 
 // Check if reference number came from URL
 $referenceNumber = isset($_GET['referenceNumber']) ? trim($_GET['referenceNumber']) : '';

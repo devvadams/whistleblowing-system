@@ -236,6 +236,23 @@
     font-size: 12px;
 }
 
+
+.admin-nav .nav-section {
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #6c757d;
+    font-weight: bold;
+    margin-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.admin-nav .nav-section:first-child {
+    border-top: none;
+    margin-top: 0;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .admin-container {

@@ -1,7 +1,7 @@
 <?php 
 // tips-list.php
 include 'includes/config.php';
-include 'includes/auth.php'; // Should include admin check
+require_once 'includes/auth.php'; // Should include admin check
 
 // Check if user is admin
 if ($_SESSION['user_role'] != 'admin') {
