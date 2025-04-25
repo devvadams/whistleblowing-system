@@ -57,6 +57,12 @@ require_once 'includes/auth.php'; // This will check if user is logged in
             <div class="form-group">
                 <button type="submit" class="btn">Submit Report</button>
             </div>
+            <div class="form-group" style="text-align: center; margin-top: 10px;">
+            <a href="feedback.php" class="btn btn-secondary" style="background-color: #6c757d; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px;">
+        Check Report Status
+                             </a>
+            </div>
+
         </form>
     </main>
 

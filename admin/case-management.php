@@ -149,7 +149,17 @@ $history = $historyStmt->get_result();
     </style>
 </head>
 <body>
-    <?php include 'sidebar.php'; ?>
+    
+<header>
+        <div class="government-header">
+            <h1>FEDERAL GOVERNMENT OF NIGERIA</h1>
+            <p>Federal Ministry of Finance</p>
+            <h2>Admin Dashboard</h2>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <?php include 'sidebar.php'; ?>
 
     <main class="admin-content">
         <div class="dashboard-header">
@@ -291,6 +301,7 @@ $history = $historyStmt->get_result();
             </section>
         </div>
     </main>
+</div>
 
     <script src="../assets/js/admin.js"></script>
 </body>

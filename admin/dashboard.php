@@ -2,6 +2,7 @@
 include '../includes/config.php';
 require_once '../includes/auth.php';
 
+
 // Check if user is admin
 if ($_SESSION['user_role'] != 'admin') {
     header("Location: ../index.php");
@@ -21,6 +22,9 @@ $recentTipsQuery = "SELECT t.*, u.first_name, u.last_name
                     ORDER BY t.created_at DESC 
                     LIMIT 5";
 $recentTips = $conn->query($recentTipsQuery);
+
+$sampleCase = $conn->query("SELECT id FROM tips ORDER BY id DESC LIMIT 1")->fetch_assoc();
+$sampleId = $sampleCase ? $sampleCase['id'] : 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +56,7 @@ $recentTips = $conn->query($recentTipsQuery);
         <li class="active"><a href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
         
         <li class="nav-section">Case Management</li>
-        <li><a href="case-management.php"><i class="fas fa-clipboard-check"></i> Manage Cases</a></li>
+        <li><a href="case-management.php?id=<?= $sampleId ?>"><i class="fas fa-clipboard-check"></i> Manage Cases</a></li>
         <li><a href="tips.php"><i class="fas fa-clipboard-list"></i> All Reports</a></li>
         <li><a href="pending-tips.php"><i class="fas fa-hourglass-half"></i> Pending</a></li>
         <li><a href="investigation-tips.php"><i class="fas fa-search"></i> Investigations</a></li>
